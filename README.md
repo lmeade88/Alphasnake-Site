@@ -1,2 +1,0 @@
-# ALPHASNAKE
-# Alphasnake-Site

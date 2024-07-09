@@ -156,9 +156,14 @@ a {
     text-align: center;
 }
 
-.release {
+#release {
     text-align: center;
-    height: 35vw;
+    font-size: 2rem;
+    padding: 1%;
+}
+
+img {
+    padding: 1%;
 }
 
 form {
@@ -272,6 +277,11 @@ img {
     opacity: 1;
     transition: ease-in .2s;
 }
+ #play {
+    background-color: transparent;
+    width: 10%;
+    border: none;
+ }
 
 @media screen and (max-width: 801px) {
     #links a {

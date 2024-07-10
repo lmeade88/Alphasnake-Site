@@ -24,9 +24,16 @@
             <img class="art" src="./images/OST_Cover.png" alt="album art">
             <h3 id="release">Released: 2024</h3>
             <div id="controls">
-                <button class="control" id="play"><img src="images/Play-icon.png" alt=""></button>
-                <button class="control" id="pause">Pause</button>
-                <button class="control" id="next">Next</button>
+                <div id="progress-bar-container">
+                    <div id="progress"></div>
+                    <div id="current-song"></div>
+                </div>
+                <div id="play-controls">
+                    <button class="control" id="previous"><img src="images/Previous-icon.png" alt=""></button>
+                    <button class="control" id="play"><img src="images/Play-icon.png" alt=""></button>
+                    <button class="control" id="pause" style="display:none;"><img src="images/Pause-icon.png" alt=""></button>
+                    <button class="control" id="next"><img src="images/Next-icon.png" alt=""></button>
+                </div>
             </div>
         </section>
         <section id="tracklist">

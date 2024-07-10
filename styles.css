@@ -74,15 +74,15 @@ h4 {
 }
 
 ul li a {
-    color: white;
-    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 1em;
     text-decoration: none;
     text-align: center;
 }
 
 ul li a:hover {
     color: rgb(194, 2, 2);
-    font-size: 1.8em;
+    font-size: 1em;
     text-decoration: none;
     opacity: .75;
     transition: ease-in .2s;
@@ -277,11 +277,56 @@ img {
     opacity: 1;
     transition: ease-in .2s;
 }
- #play {
+
+.control {
     background-color: transparent;
-    width: 10%;
+    width: 5%;
     border: none;
- }
+    opacity: .6;
+}
+
+.control:hover {
+    opacity: 1;
+}
+
+ #progress-bar-container {
+    position: relative;
+    width: 80%;
+    height: 5px;
+    background-color: rgba(90, 1, 1, 0.74);
+    margin: 10px auto auto auto;
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background-color: rgba(212, 3, 3, 0.74);
+    box-shadow:  0 20px 30px #9900008a, 0 3px 10px #ff00008e, 0 2px 3px #9900008a, 0 0 5px #ff00008e;
+}
+
+#current-song {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    color: rgba(255, 255, 255, 0.89);
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+#current-song.fade-in {
+    opacity: 1;
+}
+
+
+#controls {
+    padding-top: 1%;
+}
+
+#play-controls {
+    text-align: center;
+}
+
 
 @media screen and (max-width: 801px) {
     #links a {

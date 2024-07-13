@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The 8th Dimension OST</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,21 @@
             </ul>
         </section>
     </header>
-    <section>
+    <section id="album" data-config='{
+        "title": "THE 8TH DIMENSION OST",
+        "release": "2024",
+        "tracks": [
+            {"name": "main theme", "src": "./audio/8th Dimension OST/8th Dimension main theme.mp3"},
+            {"name": "a broken mix", "src": "./audio/8th Dimension OST/A Broken Mix.mp3"},
+            {"name": "acoustic frequency", "src": "./audio/8th Dimension OST/Acoustic Frequency.mp3"},
+            {"name": "bad ass ending", "src": "./audio/8th Dimension OST/Bad Ass Ending.mp3"},
+            {"name": "cabezas al sur", "src": "./audio/8th Dimension OST/Cabezas al sur.mp3"},
+            {"name": "razor in mind", "src": "./audio/8th Dimension OST/Razor in Mind.mp3"},
+            {"name": "robot tribe", "src": "./audio/8th Dimension OST/Robot Tribe Dance.mp3"},
+            {"name": "the frequency is on fire", "src": "./audio/8th Dimension OST/The Frequency is on Fire.mp3"},
+            {"name": "what do you have in there anyway?", "src": "./audio/8th Dimension OST/What do you have in there anyway.mp3"}
+        ]
+    }'>
         <h2 id="title">THE 8TH DIMENSION OST</h2>
         <img class="art" src="./images/OST_Cover.png" alt="album art">
         <h3 id="release">Released: 2024</h3>
@@ -28,7 +42,6 @@
             <div id="progress-bar-container">
                 <div id="progress"></div>
                 <div id="progress-handle"></div>
-                
             </div>
             <div id="play-controls">
                 <button class="control" id="previous"><img src="images/Previous-icon.png" alt="Previous"></button>
@@ -37,20 +50,8 @@
                 <button class="control" id="next"><img src="images/Next-icon.png" alt="Next"></button>
             </div>
         </div>
-        <section id="tracklist">
-            <audio id="main theme" src="./audio/8th Dimension OST/8th Dimension main theme.mp3">MAIN THEME</audio>
-            <audio id="a broken mix" src="./audio/8th Dimension OST/A Broken Mix.mp3">A BROKEN MIX</audio>
-            <audio id="acoustic frequency" src="./audio/8th Dimension OST/Acoustic Frequency.mp3">ACOUSTIC FREQUENCY</audio>
-            <audio id="bad ass ending" src="./audio/8th Dimension OST/Bad Ass Ending.mp3">BAD ASS ENDING</audio>
-            <audio id="cabezas al sur" src="./audio/8th Dimension OST/Cabezas al sur.mp3">CABEZAS AL SUR</audio>
-            <audio id="razor in mind" src="./audio/8th Dimension OST/Razor in Mind.mp3">RAZOR IN MIND</audio>
-            <audio id="robot tribe" src="./audio/8th Dimension OST/Robot Tribe Dance.mp3">ROBOT TRIBE</audio>
-            <audio id="the frequency is on fire" src="./audio/8th Dimension OST/The Frequency is on Fire.mp3">THE FREQUENCY IS ON FIRE</audio>
-            <audio id="what do you have in there anyway?" src="./audio/8th Dimension OST/What do you have in there anyway.mp3">WHAT DO YOU HAVE IN THERE ANYWAY?</audio>
-            <div id="buttons"></div>
-        </section>
+        <div id="buttons"></div>
     </section>
-    <script src="OST.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Nocturno</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Source+Sans+3&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
-        <section >
+        <section>
             <ul class="list-header">
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./music.html">MUSIC</a></li>
@@ -19,22 +19,35 @@
             </ul>
         </section>
     </header>
+    <section id="album" data-config='{
+        "title": "NOCTURNO",
+        "release": "2023",
+        "tracks": [
+            {"name": "two moons", "src": "audio/nocturno/Two Moons.m4a"},
+            {"name": "dust", "src": "audio/nocturno/Dust.m4a"},
+            {"name": "untitled", "src": "audio/nocturno/Untitled.m4a"},
+            {"name": "midnight", "src": "audio/nocturno/Midnight.m4a"},
+            {"name": "nerve bag", "src": "audio/nocturno/Nerve Bag.m4a"},
+            {"name": "finde", "src": "audio/nocturno/Finde.m4a"}
+        ]
+    }'>
+        <h2 id="title">NOCTURNO</h2>
+        <h3 id="release">Released: 2023</h3>
+        <div id="controls">
+            <div id="current-song"></div>
+            <div id="progress-bar-container">
+                <div id="progress"></div>
+                <div id="progress-handle"></div>
+            </div>
+            <div id="play-controls">
+                <button class="control" id="previous"><img src="images/Previous-icon.png" alt="Previous"></button>
+                <button class="control" id="play"><img src="images/Play-icon.png" alt="Play"></button>
+                <button class="control" id="pause" style="display:none;"><img src="images/Pause-icon.png" alt="Pause"></button>
+                <button class="control" id="next"><img src="images/Next-icon.png" alt="Next"></button>
+            </div>
+        </div>
+        <div id="buttons"></div>
     </section>
-            <h2 id="title">NOCTURNO</h2>
-            <h3 id="release">Released: 2023</h3>
-        </section>
-        <section id="tracklist">
-            <audio id="two moons" src="./audio/nocturno/Two Moons.m4a">WHAT'S SO FUNNY</audio>
-            <audio id="dust" src="./audio/nocturno/Dust.m4a">INSECTS</audio>
-            <audio id="untitled" src="./audio/nocturno/Untitled.m4a">THE IMPORTANCE OF REFERENCE</audio>
-            <audio id="midnight" src="./audio/nocturno/Midnight.m4a">THE WORST PART IS ME</audio>
-            <audio id="nerve bag" src="./audio/nocturno/Nerve Bag.m4a">TUESDAY DAYTIME TV</audio>
-            <audio id="finde" src="./audio/nocturno/Finde.m4a">DRUNK</audio>
-            <div id="buttons"></div>
-        </section>
-        <script src="nocturno.js"></script>
-    </section>
-
-
+    <script src="script.js"></script>
 </body>
 </html>

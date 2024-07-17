@@ -31,8 +31,6 @@ body, user-select-none {
     user-select: none;          /* Standard */
 }
 
-
-
 body {
     background: black;
     font-family: Archivo Black, sans-serif;
@@ -138,6 +136,7 @@ a {
     text-decoration: none;
 }
 
+/* MUSIC PAGE */
 .title {
     opacity: .6;
 }
@@ -178,6 +177,7 @@ img {
     padding: 1%;
 }
 
+/* ABOUT PAGE */
 form {
     font-family: Archivo Black, sans-serif;
     color: rgba(212, 3, 3, 0.74);
@@ -243,6 +243,7 @@ form textarea {
     transition: ease-in .2s;
 }
 
+/* ALBUM INFO */
 #title, #release {
     text-align: center;
 }
@@ -268,6 +269,7 @@ img {
     max-width: 100%;
 }
 
+/* SOCIAL LINKS */
 #links {
     width: 30%;
     display: flex;
@@ -290,6 +292,7 @@ img {
     transition: ease-in .2s;
 }
 
+/* MUSIC PLAYER */
 .control {
     background-color: transparent;
     width: 5%;

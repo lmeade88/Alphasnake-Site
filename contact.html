@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Source+Sans+3&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <section >
+        <section>
             <ul class="list-header">
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./music.html">MUSIC</a></li>
@@ -19,25 +16,30 @@
             </ul>
         </section>
     </header>
-            <form id="form" action="/action_page.php">
-              <label id="info" for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name..">
+    <h2 id="contact_us">Contact Us</h2>
+    <form id="form" action="/thank-you" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+
+        <label id="info" for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
   
-              <label id="info" for="country">Country</label>
-              <input type="text" id="country" name="country" placeholder="Ireland">
+        <label id="info" for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label id="info" for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
   
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+        <label id="info" for="message">Message:</label>
+        <textarea cols="30" rows="10" id="message" name="message" required></textarea>
   
-              <input id="submit" type="submit" value="Submit">
-            </form>
-    
-    <form action="text"></form>
+        <input id="info" id="submit" type="submit" value="Send">
+    </form>
+    <br>
     <section id="links">
         <a href="https://open.spotify.com/artist/4OchPvWOBsj7ixXXmY0Tld"><img class="social" id="spotify" src="./images/spotify.png" alt="spotify link"></a>
         <a href="https://alphasnake.bandcamp.com/music"><img class="social" id="camp" src="./images/camp.png" alt="bandcamp link"></a>
         <a href="https://www.instagram.com/alphasnakeband/"><img class="social" id="instagram" src="./images/Instagram.png" alt="insta link"></a>
     </section>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

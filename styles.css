@@ -177,7 +177,7 @@ img {
     padding: 1%;
 }
 
-/* ABOUT PAGE */
+/* CONTACT PAGE */
 form {
     font-family: Archivo Black, sans-serif;
     color: rgba(212, 3, 3, 0.74);
@@ -241,6 +241,56 @@ form textarea {
 .btn:hover {
     opacity: 1;
     transition: ease-in .2s;
+}
+
+#info {
+    color: rgba(255, 255, 255, 0.89);
+}
+
+form label {
+    font-size: 1em;
+}
+
+form input, form textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.89);
+    font-size: 1em;
+}
+
+form input[type=submit] {
+    background-color: rgba(212, 3, 3, 0.74);
+    padding: 1%;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+   background-color: rgb(194, 2, 2);
+   transition: ease-in .2s;
+}
+
+#contact_us {
+    font-size: 1.5em;
+}
+
+#back {
+    color: rgba(255, 255, 255, 0.89);
+}
+
+#back a {
+    color:rgba(212, 3, 3, 0.74);
+    font-style:italic;
+    text-decoration: underline;
+}
+
+#back a:hover {
+    color:rgb(194, 2, 2);
+}
+
+#thank_you {
+    text-align: center;
+    font-size: 1em;
 }
 
 /* ALBUM INFO */
@@ -426,9 +476,30 @@ img {
     }
     
     form label, form input, form textarea {
-        font-size: 1.5em;
+        font-size: 2.5em;
         width: 100%;
-    }   
+    } 
+    
+    #contact_us {
+        font-size: 3em;
+    }
+
+    #back {
+        color: rgba(255, 255, 255, 0.89);
+        font-size: 2em;
+    }
+    
+    #back a {
+        color:rgba(212, 3, 3, 0.74);
+        font-style:italic;
+        text-decoration: underline;
+    }
+    
+    #thank_you {
+        text-align: center;
+        font-size: 1em;
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 601px) {
@@ -517,9 +588,29 @@ img {
     }
     
     form label, form input, form textarea {
-        font-size: 2em;
+        font-size: 3em;
         width: 100%;
-    }    
+    }
+    
+    #contact_us {
+        font-size: 3em;
+    }
+
+    #back {
+        color: rgba(255, 255, 255, 0.89);
+        font-size: 3em;
+    }
+    
+    #back a {
+        color:rgba(212, 3, 3, 0.74);
+        font-style:italic;
+        text-decoration: underline;
+    }
+    
+    #thank_you {
+        text-align: center;
+        font-size: 3em;
+    }
 }
 
 

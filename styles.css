@@ -41,16 +41,60 @@ body {
     justify-content: center;
     margin: 0;
     width:auto;
+    padding-top: 80px; /* Add padding to avoid content hidden behind fixed header */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    z-index: 1000;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.list-header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.list-header li {
+    list-style: none;
+    padding: 0 2%;
+}
+
+.list-header li a {
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.list-header li a:hover {
+    color: rgb(194, 2, 2);
+    font-size: 1em;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: ease-in 0.2s;
+}
+
+.list-header li a.current {
+    color: grey;
+    pointer-events: none;
 }
 
 h1 {
     color: rgba(255, 255, 255, 0.89);
     font-size: 12vw;
     padding: 1%;;
-    margin-top: 2%;;
+    margin-top: 8%;;
     text-shadow:  0 0 30px #9900008a, 0 0 100px #ff00008e, 0 0 30px #9900008a, 0 0 50px #ff00008e;
     transition: ease-in;
-    margin-bottom: 0;
+    margin-bottom: 8%;
 }
 
 h2 {
@@ -177,7 +221,7 @@ img {
     padding: 1%;
 }
 
-/* ABOUT PAGE */
+/* CONTACT PAGE */
 form {
     font-family: Archivo Black, sans-serif;
     color: rgba(212, 3, 3, 0.74);
@@ -241,6 +285,56 @@ form textarea {
 .btn:hover {
     opacity: 1;
     transition: ease-in .2s;
+}
+
+#info {
+    color: rgba(255, 255, 255, 0.89);
+}
+
+form label {
+    font-size: 1em;
+}
+
+form input, form textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.89);
+    font-size: 1em;
+}
+
+form input[type=submit] {
+    background-color: rgba(212, 3, 3, 0.74);
+    padding: 1%;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+   background-color: rgb(194, 2, 2);
+   transition: ease-in .2s;
+}
+
+#contact_us {
+    font-size: 1.5em;
+}
+
+#back {
+    color: rgba(255, 255, 255, 0.89);
+}
+
+#back a {
+    color:rgba(212, 3, 3, 0.74);
+    font-style:italic;
+    text-decoration: underline;
+}
+
+#back a:hover {
+    color:rgb(194, 2, 2);
+}
+
+#thank_you {
+    text-align: center;
+    font-size: 1em;
 }
 
 /* ALBUM INFO */
@@ -426,9 +520,30 @@ img {
     }
     
     form label, form input, form textarea {
-        font-size: 1.5em;
+        font-size: 2.5em;
         width: 100%;
-    }   
+    } 
+    
+    #contact_us {
+        font-size: 3em;
+    }
+
+    #back {
+        color: rgba(255, 255, 255, 0.89);
+        font-size: 2em;
+    }
+    
+    #back a {
+        color:rgba(212, 3, 3, 0.74);
+        font-style:italic;
+        text-decoration: underline;
+    }
+    
+    #thank_you {
+        text-align: center;
+        font-size: 1em;
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 601px) {
@@ -517,9 +632,29 @@ img {
     }
     
     form label, form input, form textarea {
-        font-size: 2em;
+        font-size: 3em;
         width: 100%;
-    }    
+    }
+    
+    #contact_us {
+        font-size: 3em;
+    }
+
+    #back {
+        color: rgba(255, 255, 255, 0.89);
+        font-size: 3em;
+    }
+    
+    #back a {
+        color:rgba(212, 3, 3, 0.74);
+        font-style:italic;
+        text-decoration: underline;
+    }
+    
+    #thank_you {
+        text-align: center;
+        font-size: 3em;
+    }
 }
 
 

@@ -180,6 +180,11 @@ a {
     text-decoration: none;
 }
 
+#alpha-symbol {
+    text-decoration:line-through;
+    text-decoration-color: rgb(194, 2, 2);
+}
+
 /* MUSIC PAGE */
 .title {
     opacity: .6;

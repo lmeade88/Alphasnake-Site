@@ -473,7 +473,7 @@ img {
         margin-bottom: 10%;
     }
 
-    ul li a {
+    ul li a, ul li {
         font-size: 2.2em;
     }
     ul li a:hover {
@@ -549,6 +549,16 @@ img {
         font-size: 1em;
         font-size: 2em;
     }
+
+    /* Place music player at the top */
+    .music-player {
+        order: -1; /* Move the music player above the header */
+    }
+
+    /* Place the header underneath */
+    header {
+        order: 1;
+    }
 }
 
 @media screen and (max-width: 601px) {
@@ -576,8 +586,9 @@ img {
     ul li {
         display: block; /* Ensure each item is on a new line */
         margin-bottom: 5%; /* Space between each menu item */
+        font-size: 1em;
     }
-    
+
     section {
         display: flex;
         align-items: center;
@@ -682,6 +693,38 @@ img {
 
     .music-player {
         display:inline-block;
+    }
+
+    /* Place music player at the top */
+    .music-player {
+        order: -1; /* Move the music player above the header */
+        padding: 20px;
+    }
+
+    /* Place the header underneath */
+    header {
+        order: 1;
+        padding: 10px;
+    }
+
+    .music-player #current-song {
+        font-size: 2em;
+    }
+
+    .music-player #release {
+        padding-bottom: 3.5%;
+    }
+
+    #previous, #play, #pause, #next {
+        width: 20%;
+    }
+
+    .art {
+        width: 75%;
+    }
+
+    #spotify, #camp, #instagram {
+        width: 80%;
     }
 }
 
